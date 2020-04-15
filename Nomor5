@@ -1,0 +1,37 @@
+/*8.	Buat Program untuk menyusun nomor dus air 2,4,6,…18 (gunakan looping) ke dalam rang kontainer yang memuat ukuran 3 x 3,
+      setiap dus akan diberi nomor sebanyak jumlah dus dan ukuran kontainer*/
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	int a, a2=1, a3;
+	int box[3][3]= {(2,4,6),(8,10,12),(14,16,18)} ;
+	
+	cout<<"Banyak dus : 9"<<endl;
+	
+	cout<<"No dus ";
+	for(a=0;a<=9;a++){
+		cout<<(a+1)*2<<" ";
+	}
+	cout<<"\n\n";
+
+	for(a=0;a<3;a++){
+		a3=(a+1)*2;
+		box[a][0]=a3;
+		cout<<"No dus "<<a2++<<" : "<<box[a][0]<<endl;	
+	}
+
+	for(a=0;a<3;a++){
+		a3=(a+4)*2;
+		box[a][1]=a3;
+		cout<<"No dus "<<a2++<<" : "<<box[a][1]<<endl;
+	}
+
+	for(a=0;a<3;a++){
+		a3=(a+7)*2;
+		box[a][2]=a3;
+		cout<<"No dus "<<a2++<<" : "<<box[a][2]<<endl;
+	}
+}
