@@ -1,0 +1,25 @@
+/*4.  Buatlah Program untuk menjumlahkan bilangan bulat yang dimasukkan melalui keyboard, batas awal (i) bertipe integer, 
+      batas akhir(n) bertipe integer dan jumlah (sum) bertipe integer untuk menyimpan total bilangan bulat*/
+#include <iostream>
+using namespace std;
+
+int hitung(int angka[], int panjang){
+	int hasil=0;
+	for(int i=0; i<panjang; i++){
+		hasil=hasil+angka[i];
+	}return hasil;
+}
+
+int main(){
+	
+	int panjang, array[100];
+	
+	cout<<"Jumlah bilangan : ";
+	cin>>panjang;
+	
+	for(int i=0; i<panjang; i++){
+		cin>>array[i];
+	}
+	cout<< "Hasil Penjumlahan : "<<hitung(array,panjang);	
+}
+
